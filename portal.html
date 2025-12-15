@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>NutriPet | Portal do Cliente</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="portal.css">
+</head>
+
+<body class="portal">
+
+<!-- HEADER IGUAL AO DA HOME -->
+<header class="header">
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo">
+        <img src="nutri.jpg" alt="Logo NutriPet">
+      </div>
+
+      <ul class="nav-menu">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="#perfil">Meu Pet</a></li>
+        <li><a href="#pedidos">Pedidos</a></li>
+        <li><a href="#especialista">Especialista</a></li>
+        <li><a href="#" id="logout" class="btn-primary">Sair</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<!-- HERO DO PORTAL (MESMA IDENTIDADE) -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-content">
+      <h2 id="boasVindas">Olá 👋</h2>
+      <p>Gerencie a alimentação e o bem-estar do seu pet</p>
+    </div>
+  </div>
+</section>
+
+<!-- DASHBOARD -->
+<section class="dashboard">
+  <div class="container">
+    <div class="dashboard-grid">
+
+      <div class="dashboard-card" id="perfil">
+        <h3>🐾 Perfil do Pet</h3>
+        <p><strong>Nome:</strong> <span id="petNome"></span></p>
+        <p><strong>Tipo:</strong> <span id="petTipo"></span></p>
+        <p><strong>Peso:</strong> <span id="petPeso"></span> kg</p>
+      </div>
+<div class="dashboard-card">
+  <h3>🥣 Plano Alimentar</h3>
+
+  <p id="recomendacao"></p>
+
+  <button class="btn-secondary" id="verDetalhes">
+    Ver detalhes
+  </button>
+
+  <!-- DETALHES (começa escondido) -->
+  <div id="detalhesPlano" style="display:none; margin-top:15px;">
+    <ul>
+      <li id="detalhe1"></li>
+      <li id="detalhe2"></li>
+      <li id="detalhe3"></li>
+    </ul>
+  </div>
+</div>
+
+
+      <div class="dashboard-card" id="pedidos">
+        <h3>📦 Pedidos</h3>
+        <p class="status">Nenhum pedido realizado</p>
+        <button class="btn-primary" id="fazerPedido">Fazer Pedido</button>
+      </div>
+
+      <div class="dashboard-card" id="especialista">
+        <h3>💬 Falar com Especialista</h3>
+        <textarea placeholder="Digite sua dúvida sobre alimentação..."></textarea>
+        <button class="btn-primary" id="falarEspecialista">Enviar</button>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER IGUAL AO DA HOME -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-bottom">
+      <p>&copy; 2025 NutriPet. Todos os direitos reservados.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+
+</html>
+
