@@ -1,0 +1,200 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body.portal {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f6f8fa;
+  color: #333;
+}
+
+/* CONTAINER PADRÃO */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ================= HEADER ================= */
+
+.header {
+  background: #ffffff;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar {
+  padding: 1rem 0;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  height: 55px;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #333;
+  transition: color 0.3s;
+}
+
+.nav-menu a:hover {
+  color: #1f91ad;
+}
+
+/* ================= BOTÕES ================= */
+
+.btn-primary {
+  background: #1f91ad;
+  color: #fff;
+  padding: 0.7rem 1.6rem;
+  border-radius: 30px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  background: #e9bb25;
+  color: #333;
+}
+
+.btn-secondary {
+  background: transparent;
+  border: 2px solid #1f91ad;
+  color: #1f91ad;
+  padding: 0.6rem 1.4rem;
+  border-radius: 30px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-secondary:hover {
+  background: #1f91ad;
+  color: #fff;
+}
+
+/* ================= HERO ================= */
+
+.hero {
+  background: linear-gradient(135deg, #1f91ad, #4fdbc9);
+  color: #fff;
+  padding: 4.5rem 0;
+  text-align: center;
+}
+
+.hero-content h2 {
+  font-size: 2.6rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  opacity: 0.95;
+}
+
+/* ================= DASHBOARD ================= */
+
+.dashboard {
+  margin-top: -3rem;
+  padding-bottom: 4rem;
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+}
+
+/* ================= CARDS ================= */
+
+.dashboard-card {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 2.2rem;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+  transition: transform 0.3s;
+}
+
+.dashboard-card:hover {
+  transform: translateY(-6px);
+}
+
+.dashboard-card h3 {
+  color: #1f91ad;
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+}
+
+.dashboard-card p {
+  margin-bottom: 0.5rem;
+  font-size: 1.05rem;
+}
+
+/* STATUS */
+.status {
+  color: #2ecc71;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+/* TEXTAREA */
+.dashboard-card textarea {
+  width: 100%;
+  min-height: 120px;
+  padding: 0.9rem;
+  border-radius: 12px;
+  border: 2px solid #ddd;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  resize: none;
+}
+
+.dashboard-card textarea:focus {
+  outline: none;
+  border-color: #1f91ad;
+}
+
+/* ================= FOOTER ================= */
+
+.footer {
+  background: #2c3e50;
+  color: #fff;
+  padding: 2rem 0;
+  text-align: center;
+  font-size: 0.95rem;
+}
+
+/* ================= RESPONSIVO ================= */
+
+@media (max-width: 768px) {
+  .nav-menu {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .hero-content h2 {
+    font-size: 2rem;
+  }
+}
